@@ -1,0 +1,57 @@
+<!--pages/movie_rank/movie_rank.wxml-->
+<!-- <text>pages/movie_rank/movie_rank.wxml</text> -->
+<!-- 豆瓣电影 排行榜 -->
+<view class="bigbox">
+  <view class="box">
+    <view>
+      <view style="position: relative;">
+        <text style="font-size: 50rpx;">👀</text>
+        <text class="t1" style="font-size: 45rpx;font-style: italic;">2020</text>
+        <text class="t2" >豆瓣 MOVIES OF THE YEAR</text>
+        <text class="t3" >年度电影榜单</text>
+      </view>
+    </view>
+    <image class="threeimg" src="https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2881176356.webp"></image>
+    <image class="towimg" src="	https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2629056068.webp"></image>
+    <image class="img" src="https://img3.doubanio.com/view/photo/m/public/p2570235120.webp"></image>
+  </view>
+  <view class="ttext">
+    <text style="font-size: 40rpx;color: rgb(88, 88, 88);">+190</text>
+  </view>
+</view>
+<view class="bigbox" style="margin-top: 20rpx;">
+  <view class="box">
+    <view>
+      <view style="position: relative;">
+        <text style="font-size: 50rpx;">👀</text>
+        <text class="t1" style="font-size: 45rpx;font-style: italic;">2020</text>
+        <text class="t2" >豆瓣 MOVIES OF THE YEAR</text>
+        <text class="t3">年度电影榜单</text>
+      </view>
+    </view>
+    <image class="threeimg" src="https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2881176356.webp"></image>
+    <image class="towimg" src="	https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2629056068.webp"></image>
+    <image class="img" src="https://img3.doubanio.com/view/photo/m/public/p2570235120.webp"></image>
+  </view>
+  <view class="ttext">
+    <text style="font-size: 40rpx;color: rgb(88, 88, 88);">+190</text>
+  </view>
+</view>
+
+<view class="bigbox2" wx:for="{{2}}">
+  <image class="timg" src="/images/left01.png"></image>
+  <view class="movieName">
+    <view class="towfont" style="margin-top: 28rpx;">
+      1.肖申克的救赎
+      <text class="towf">9.7分</text>
+    </view>
+    <view class="towfont">
+      2.霸王别姬
+      <text class="towf">9.6分</text>
+    </view>
+    <view class="towfont">
+      3.阿甘正传
+      <text class="towf" >9.5分</text>
+    </view>
+  </view>
+</view>

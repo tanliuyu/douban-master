@@ -1,0 +1,15 @@
+<!--pages/movie_more/movie_more.wxml-->
+<!-- <text>pages/movie_more/movie_more.wxml</text> -->
+<!-- 豆瓣电影 查看更多 -->
+<view class="movie_more">
+  <view class="movie_box" wx:for="{{movie_list}}" bindtap="tomore_details" data-id="{{item.id}}" data-title="{{item.title}}" wx:key="index">
+    <image class="movie_img" src="{{item.image}}"></image>
+    <view class="movie_textinfo">
+      <view class="movie_name">{{item.title}}</view>
+      <view class="movie-score">
+        <text style="color: #fcb141;">⭐︎⭐︎⭐︎⭐︎⭐︎</text>
+        {{item.rate}}
+      </view>
+    </view>
+  </view>
+</view>

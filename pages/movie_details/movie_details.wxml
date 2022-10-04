@@ -1,0 +1,47 @@
+<!--pages/movie_details/movie_details.wxml-->
+<!-- <text>pages/movie_details/movie_details.wxml</text> -->
+
+<view class="bigbox" wx:for="{{movie_details}}">
+  <!-- 第一个大框 -->
+  <view class="box1">
+    <image class="img1" src="{{item.image}}"></image>
+    <view class="box11">
+      <!-- 第一排:电影名 -->
+      <view>
+        <text class="name">{{item.title}}</text>
+        <text class="year">({{item.year}})</text>
+      </view>
+      <!-- 第二排:电影信息 -->
+      <view class="box111">
+        <text class="type">{{item.genre}}/</text>
+        <text class="area">{{item.contries}}/</text>
+        <text class="publishdate">{{item.publishdate}}</text>
+      </view>
+      <!-- 第三排*:想看 -->
+      <view class="want">
+        <image class="img2" src="/images/想看.png"></image>
+        <text class="wanttext">想看</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 第二个大框:评分 -->
+  <view class="box2" >
+    <view>
+      <text style="font-size: small;margin-left: 20rpx;">豆瓣评分™</text>
+      <text style="color: rgb(160, 160, 160);position: absolute;right: 40rpx;">></text>
+    </view>
+    <view style="text-align: center;margin-top: 10rpx;">
+      <view class="score" style="font-size: 50rpx;">{{item.rate}}</view>
+      <view class="score" style="color: rgb(255, 200, 19)">★★★★★</view> 
+    </view>
+  </view>
+  <!-- 第三个框:简介 -->
+  <view class="box3">
+    <view>简介</view>
+    <view class="content">{{item.description}}</view>
+
+  </view>
+
+
+</view>

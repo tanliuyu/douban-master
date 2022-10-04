@@ -1,0 +1,79 @@
+<!--pages/movie_home/movie_home.wxml-->
+<!-- <text>pages/movie_home/movie_home.wxml</text> -->
+<!-- 豆瓣电影 小程序 首页 -->
+
+<view class="search">
+  <view class="btn_search" bindtap="tomovie_search">
+    <span class="search_text"> 🔍︎搜索</span>
+  </view>
+</view>
+<view class="movie_first_title">
+  <span class="movie_type">喜剧电影</span>
+  <span class="movie_more" bindtap="tomovie_more" data-name="喜剧">查看更多 ></span>
+</view>
+<scroll-view class="scroll_view" scroll-x="{{true}}">
+  <view class="movie_box" wx:for="{{movie_comedy_list}}" wx:key="index" bindtap="tomore_details" data-id="{{item.id}}" data-title="{{item.title}}">
+    <image class="movie_img" src="{{item.image}}"></image>
+    <view class="movie_textinfo">
+      <view class="movie_name">{{item.title}}</view>
+      <view class="movie-score">
+        <text style="color: #fcb141;">⭐︎⭐︎⭐︎⭐︎⭐︎</text>
+        {{item.rate}}
+      </view>
+    </view>
+  </view>
+</scroll-view>
+
+<view class="movie_first_title" style="margin-top: 10rpx;">
+  <span class="movie_type">科幻电影</span>
+  <span class="movie_more"  bindtap="tomovie_more" data-name="科幻">查看更多 ></span>
+</view>
+<scroll-view class="scroll_view" scroll-x="{{true}}">
+  <view class="movie_box" wx:for="{{movie_science_list}}" wx:key="index" bindtap="tomore_details" data-id="{{item.id}}" data-title="{{item.title}}">
+    <image class="movie_img" src="{{item.image}}"></image>
+    <view class="movie_textinfo">
+      <view class="movie_name">{{item.title}}</view>
+      <view class="movie-score">
+        <text style="color: #fcb141;">⭐︎⭐︎⭐︎⭐︎⭐︎</text>
+        {{item.rate}}
+      </view>
+    </view>
+  </view>
+</scroll-view>
+
+<view class="movie_first_title" style="margin-top: 10rpx;">
+  <span class="movie_type">爱情电影</span>
+  <span class="movie_more"  bindtap="tomovie_more" data-name="爱情">查看更多 ></span>
+</view>
+<scroll-view class="scroll_view" scroll-x="{{true}}">
+  <view class="movie_box" wx:for="{{movie_love_list}}" wx:key="index" bindtap="tomore_details" data-id="{{item.id}}" data-title="{{item.title}}">
+    <image class="movie_img" src="{{item.image}}"></image>
+    <view class="movie_textinfo">
+      <view class="movie_name">{{item.title}}</view>
+      <view class="movie-score">
+        <text style="color: #fcb141;">⭐︎⭐︎⭐︎⭐︎⭐︎</text>
+        {{item.rate}}
+      </view>
+    </view>
+  </view>
+</scroll-view>
+<view class="movie_first_title" style="margin-top: 10rpx;">
+  <span class="movie_type">惊悚电影</span>
+  <span class="movie_more"  bindtap="tomovie_more" data-name="惊悚">查看更多 ></span>
+</view>
+<scroll-view class="scroll_view" scroll-x="{{true}}">
+  <view class="movie_box" wx:for="{{ movie_thriller_list}}" wx:key="index" bindtap="tomore_details" data-id="{{item.id}}" data-title="{{item.title}}">
+    <image class="movie_img" src="{{item.image}}"></image>
+    <view class="movie_textinfo">
+      <view class="movie_name">{{item.title}}</view>
+      <view class="movie-score">
+        <text style="color: #fcb141;">⭐︎⭐︎⭐︎⭐︎⭐︎</text>
+        {{item.rate}}
+      </view>
+    </view>
+  </view>
+</scroll-view>
+<!-- <view class="movie_first_title" style="margin-top: 10rpx;">
+  <span class="movie_type">近期热门剧集</span>
+  <span class="movie_more"  bindtap="tomovie_more">查看更多 ></span>
+</view> -->

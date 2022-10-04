@@ -1,0 +1,45 @@
+{
+  "pages": [ 
+    "pages/movie_home/movie_home",
+    "pages/movie_login/movie_login",
+    "pages/movie_details/movie_details",
+    "pages/movie_search/movie_search",
+    "pages/movie_more/movie_more",
+    "pages/movie_rank/movie_rank",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffd7d7",
+    "navigationBarTitleText": "tatan姐姐",
+    "navigationBarTextStyle": "black"
+  },
+"tabBar": {
+  "position":"bottom",
+  "borderStyle": "black",
+  "color": "#8d8d8d",
+  "selectedColor": "#00ff00",
+  "list": [{
+    "pagePath": "pages/movie_home/movie_home",
+    "text": "首页",
+    "iconPath": "/images/爆米花.png",
+    "selectedIconPath": "/images/爆米花(1).png"
+  },
+  {
+    "pagePath": "pages/movie_rank/movie_rank",
+    "text": "榜单",
+    "iconPath": "/images/榜单.png",
+    "selectedIconPath": "/images/榜单(1).png"
+  },
+  {
+    "pagePath": "pages/movie_login/movie_login",
+    "text": "我的",
+    "iconPath": "/images/我的.png",
+    "selectedIconPath": "/images/1我的.png"
+  }]
+},
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

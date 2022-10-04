@@ -1,0 +1,109 @@
+/* pages/movie_rank/movie_rank.wxss */
+.bigbox{
+  position: relative;
+  top: 10rpx;
+  left: 20rpx;
+  background-color:beige;
+  width: 710rpx;
+  height: 300rpx;
+  border-radius: 10rpx;
+}
+.box{
+  position: relative;
+  top: 30rpx;
+  left: 30rpx;
+  height: 240rpx;
+  width: 350rpx;
+}
+
+.t2{
+  position: absolute;
+  top: 15rpx;
+  font-size: 12rpx;
+  margin-left: 12rpx;
+  
+}
+.t3{
+  margin-top: 5rpx;
+  font-size: 26rpx;
+  margin-left: 10rpx;
+}
+.img{
+  position: absolute;
+  right: 220rpx;
+  width: 130rpx;
+  height: 170rpx;
+  border-radius: 10rpx;
+}
+.towimg{
+  position: absolute;
+  right: 125rpx;
+  width: 130rpx;
+  height: 170rpx;
+  border-radius: 10rpx;
+}
+.threeimg{
+  position: absolute;
+  right: 30rpx;
+  width: 130rpx;
+  height: 170rpx;
+  border-radius: 10rpx;
+}
+.ttext{
+  position: absolute;
+  top: 130rpx;
+  left: 390rpx;
+  width: auto;
+}
+.bigbox2{
+  position: relative;
+  top: 20rpx;
+  left: 20rpx;
+  width: 710rpx;
+  height: 210rpx;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  white-space: nowrap;
+}
+.timg{
+  position: relative;
+  width: 210rpx;
+  height: 210rpx;
+  border-radius: 10rpx;
+}
+.num{
+  position: relative;
+  width: 210rpx;
+  height: 210rpx;
+  display: inline-block;
+  border-radius: 10rpx;
+  background-color: rgb(255, 133, 139);
+}
+.t{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.tt{
+  font-size: 40rpx;
+  color:#FFFFFF;
+  font-weight: bold;
+}
+.movieName{
+  position: absolute;
+  width: 490rpx;
+  height: 170rpx;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  border-style: solid;
+  display: inline-block;
+  border-color: rgb(218, 218, 218);
+}
+.towfont{
+  margin-left: 40rpx;
+  font-size: 26rpx;
+}
+.towf{
+  color: rgb(250, 187, 15);
+}

@@ -1,0 +1,163 @@
+/* pages/movie_search/movie_search.wxss */
+.search {
+  position: relative;
+  width: 100%;
+  height: 80rpx;
+  background-color: #42BD55;
+  display: inline-flex;
+  top: 0;
+}
+
+.btn_search {
+  position: relative;
+  width: 95%;
+  height: 60rpx;
+  background-color: #fff;
+  margin: 0 auto;
+  align-self: center;
+  color: #8E8E8E;
+  font-size: 24rpx;
+  border-radius: 10rpx;
+}
+
+.input_search {
+  position: absolute;
+  width: 96%;
+  height: 100%;
+  left: 40rpx;
+  border-radius: 10rpx;
+}
+
+.search_img {
+  position: absolute;
+  align-self: center;
+  top: 25%;
+  left: 1%;
+}
+
+.class_frame {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10rpx;
+
+}
+
+.movie_box {
+  position: relative;
+  background-color: #e7e7e7;
+  width: 47%;
+  height: 170rpx;
+  display: flex;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-radius: 8rpx;
+}
+
+.movie_img,
+.class_img {
+  position: absolute;
+  width: 120rpx;
+  height: 120rpx;
+  align-self: center;
+  left: 5%;
+  border-radius: 10rpx;
+}
+
+.class_alt {
+  position: absolute;
+  background-color: #42343286;
+  width: 50%;
+  height: 30rpx;
+  bottom: 0;
+  color: #fff;
+  font-size: 20rpx;
+  text-align: center;
+  border-bottom-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+}
+
+.class_info {
+  position: relative;
+  width: 50%;
+
+  left: 39%;
+  padding: 5%;
+}
+
+.class_type {
+  width: 100%;
+  height: 70%;
+  max-lines: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.class_attention {
+  width: 100%;
+  height: 23%;
+  color: #5a5858;
+  font-size: 20rpx;
+  max-lines: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movie_box2 {
+  width: 95%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+}
+
+.movie2_img {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 20rpx;
+  border-radius: 10rpx;
+  align-self: center;
+
+}
+
+.movie2_info {
+  width: 70%;
+  margin: 20rpx;
+}
+
+.movie2_name {
+  margin-bottom: 10rpx;
+  max-lines: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movie2_score {
+  font-size: 22rpx;
+  margin-bottom: 10rpx;
+  max-lines: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fcb141;
+}
+
+.movie2_scorenum{
+  font-size: 22rpx;
+  color: #747171;
+}
+
+.movie2_author {
+  font-size: 22rpx;
+  max-lines: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.separate_line{
+  background-color: #dbdbdb;
+  height: 2rpx;
+  margin-top: 20rpx;
+  margin-left: 200rpx;
+  margin-right: 20rpx;
+}

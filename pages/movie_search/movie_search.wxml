@@ -1,0 +1,34 @@
+<!--pages/movie_search/movie_search.wxml-->
+<!-- <text>pages/movie_search/movie_search.wxml</text> -->
+<view class="search">
+  <view class="btn_search">
+    <input class="input_search" type="text" placeholder="搜索" bindinput="myinput"></input>
+    <view class="search_img">🔍︎</view>
+  </view>
+</view>
+<view class="class_frame">
+  <view class="movie_box" wx:for="{{movie_class_list}}" wx:key="index">
+    <view class="movie_img" >
+      <image class="class_img" src="{{item.class_img}}"></image>
+      <span class="class_alt"> 片单 </span>
+    </view>
+    <view class="class_info">
+      <view class="class_type">{{item.class_type}}</view>
+      <view class="class_attention">{{item.class_attention}}</view>
+    </view>
+  </view>
+</view>
+
+<view wx:for="{{movie_select_list}}" wx:key="index">
+  <view class="movie_box2">
+    <image class="movie2_img" src="{{item.image}}"></image>
+    <view class="movie2_info">
+      <view class="movie2_name">{{item.title}}</view>
+      <view class="movie2_score">★★★★★
+        <span class="movie2_scorenum">{{item.rate}}</span>
+      </view>
+      <view class="movie2_author">{{item.contries}}  {{item.director}}  {{item.language}}</view>
+    </view>
+  </view>
+  <view class="separate_line"></view>
+</view>

@@ -1,0 +1,79 @@
+<!--pages/movie_login/movie_login.wxml-->
+<!-- <text>pages/movie_login/movie_login.wxml</text> -->
+<!-- 登录前的界面 -->
+<view wx:if="{{!isshow}}">
+  <!-- 第一个登录盒子 -->
+  <view class="butbox" bindtap="login">
+    <!-- 登录按钮 -->
+    <view class="but">登录</view>
+  </view>
+  <!-- 第二个分类盒子 -->
+  <view class="classfiybox">
+    <view class="left">我的书影迷</view>
+    <view class="right">登录查看</view>
+    <view class="toRight">></view>
+  </view>
+  <!-- 第三个盒子 -->
+  <view class="box3">
+    <!-- 图片盒子 -->
+    <view class="imgbox">
+      <image src="/images/复制-移动文件夹.png" class="img"></image>
+    </view>
+    <!-- 分析盒子 -->
+    <view class="ana">
+      <!-- 观影分析 -->
+      <view class="anatit">观影分析</view>
+      <!-- 看过 -->
+      <view class="k">0看过</view>
+    </view>
+    <!-- 标记 -->
+    <view class="mark">标记10部影片开启观影分析</view>
+    <!-- 开启 -->
+    <view class="open">立即开启</view>
+    <view class="toRight" id="to2">></view>
+  </view>
+</view>
+
+
+
+
+<!-- 登录后的界面 -->
+<view wx:else="{{isshow}}">
+  <!-- 第一个个人信息盒子 -->
+  <view class="butbox" bindtap="logins">
+    <!-- 头像及名字盒子 -->
+    <view>
+      <image src="/images/人民币.png" id="tip"></image>
+      <view id="names">小钱钱</view>
+    </view>
+    <!-- 退出按钮 -->
+    <view id="but2" bindtap="login">
+      <image src="/images/退出.png" style="width: 40rpx;height: 40rpx;align-content: center;"></image>
+      退出</view>
+  </view>
+  <!-- 第二个分类盒子 -->
+  <view class="classfiybox">
+    <view class="left">我的书影迷</view>
+    <view class="right">全部</view>
+    <view class="toRight">></view>
+  </view>
+  <!-- 第三个盒子 -->
+  <view class="box3">
+    <!-- 图片盒子 -->
+    <view class="imgbox">
+      <image src="/images/复制-移动文件夹.png" class="img"></image>
+    </view>
+    <!-- 分析盒子 -->
+    <view class="ana">
+      <!-- 观影分析 -->
+      <view class="anatit">观影分析</view>
+      <!-- 看过 -->
+      <view class="k" id="k">8 看过</view>
+    </view>
+    <!-- 标记 -->
+    <view class="mark">标记10部影片开启观影分析</view>
+    <!-- 开启 -->
+    <view class="open">立即开启</view>
+    <view class="toRight" id="to2">></view>
+  </view>
+</view>
